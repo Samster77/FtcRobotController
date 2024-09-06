@@ -1,7 +1,5 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.arcrobotics.ftclib.geometry.Translation2d;
-
 public class Constants {
 
     public static final String IMU_NAME = "imu";
@@ -11,18 +9,12 @@ public class Constants {
     public static final String BL_DRIVE_NAME = "blDrive";
     public static final String BR_DRIVE_NAME = "brDrive";
 
-    public static final double WHEEL_RADIUS_METERS = 2 * 0.0254;
-    public static final double WHEEL_CIRCUMFERENCE_METERS = 2 * Math.PI * WHEEL_RADIUS_METERS;
-    public static final double WHEELBASE_METERS = 14 * 0.0254;
-    public static final double TRACK_WIDTH_METERS = 14 * 0.0254;
-    public static final double DRIVE_RATIO = 15;
+    public static final String LEFT_ENCODER_NAME = "leftPod";
+    public static final String RIGHT_ENCODER_NAME = "rightPod";
+    public static final String CENTER_ENCODER_NAME = "centerPod";
 
-    public static final Translation2d FL_TRANSLATION = new Translation2d(WHEELBASE_METERS/2, TRACK_WIDTH_METERS /2);
-    public static final Translation2d FR_TRANSLATION = new Translation2d(WHEELBASE_METERS/2, -TRACK_WIDTH_METERS /2);
-    public static final Translation2d BL_TRANSLATION = new Translation2d(-WHEELBASE_METERS/2, TRACK_WIDTH_METERS /2);
-    public static final Translation2d BR_TRANSLATION = new Translation2d(-WHEELBASE_METERS/2, -TRACK_WIDTH_METERS /2);
-
-
-
-
+    public static final double DEADWHEEL_DIAMETER_IN = 35 / 25.4;
+    public static final double DISTANCE_PER_PULSE = Math.PI * DEADWHEEL_DIAMETER_IN / 8192;
+    public static final double TRACKWIDTH_IN = 12;
+    public static final double CENTER_WHEEL_OFFSET_IN = 5;
 }
