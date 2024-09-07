@@ -22,8 +22,8 @@ public class TestAuton extends CommandOpMode {
     private OdometrySubsystem odometry;
 
     Waypoint p1 = new StartWaypoint(0, 0);
-    Waypoint p2 = new GeneralWaypoint();
-    Waypoint p3 = new EndWaypoint();
+    Waypoint p2 = new GeneralWaypoint(12,0);
+    Waypoint p3 = new EndWaypoint(12, 12, 0, 0.25, 0.25, 10, 1, Math.PI/90);
 
     PurePursuitCommand command = new PurePursuitCommand(drive, odometry, p1, p2, p3);
 

@@ -57,8 +57,12 @@ public class TestTeleop extends CommandOpMode
 
         register(drive, odometry);
 
+        run();
+
         drive.setDefaultCommand(new DriveCommand(drive));
 
         telemetry.addData("Status", "Initialized");
     }
+
+
 }
